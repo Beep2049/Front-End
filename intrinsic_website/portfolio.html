@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio_style.css">
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <main class="main-page">
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="index.html" class="navlink">Home</a>
+                <a href="index.html#About" class="navlink">About</a>
+                <a href="index.html#Services" class="navlink">Services</a>
+                <a href="pricing.html" class="navlink">Pricing</a>
+                <a href="portfolio.html" class="navlink">Portfolio</a>
+                <a href="contact.html" class="navlink">Contact</a>
+            </div>
+
+            <div class="nav-contact">
+                <p id="nav-phone" class="navlink">+1-305-498-5503</p>
+                <a href="mailto:support@intrinsic.com" class="navlink">support@intrinsic.com</a>
+            </div>
+        </nav>
+
+        <section class="main-section">
+            <video class="header-video" id="header-video" autoplay muted loop>
+                <source src="pics/b-roll.mp4">
+                Your Browser Does Not Support The Video Tag
+            </video>
+            <h2 class="section-header" id="main-section-header">Our Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-tile" id="tmas" data-modal="tmas-modal">
+                    <img src="pics/TMAS.png" alt= "tmas-website" class="grid-img" id="tmas-img">
+                    <p class="grid-text" id="tmas-text">Event Website</p>
+                </div>
+                <div class="portfolio-tile" id="pw" data-modal="pw-modal">
+                    <img src="pics/pw.png" alt="personal-website" class="grid-img" id="pw-img">
+                    <p class="grid-text" id="pw-text">Personal Website</p>
+                </div>
+                <div class="portfolio-tile" id="taxi" data-modal="taxi-modal">
+                    <img src="pics/taxi.png" alt="taxi-website" class="grid-img" id="taxi-img">
+                    <p class="grid-text" id="taxi-text">Taxi Service Website</p>
+                </div>
+                <div class="portfolio-tile" id="bakery" data-modal="bakery-modal">
+                    <img src="pics/bakery.png" alt="bakery-website" class="grid-img" id="bakery-img">
+                    <p class="grid-text" id="bakery-text">Bakery Website</p>
+                </div>
+            </div>
+
+            <div id="tmas-modal" class="modal modal-hidden">
+                <div class="modal-header">
+                    <span class="close-btn">&times;</span>
+                    <span class="modal-title">Event Website</span>
+                </div>
+                <div class="modal-content">
+                    <img src="pics/TMAS.png" alt="tmas-modal-img" class="modal-img">
+                    <p class="modal-text">Local Event website created with a specific theme(western) in mind</p>
+                </div>
+            </div>
+
+            <div id="pw-modal" class="modal modal-hidden">
+                <div class="modal-header">
+                    <span class="close-btn">&times;</span>
+                    <span class="modal-title">Personal Website</span>
+                </div>
+                <div class="modal-content">
+                    <img src="pics/pw.png" alt="pw-modal-img" class="modal-img">
+                    <p class="modal-text">Personal website created and catered to the needs of the individual</p>
+                </div>
+            </div>
+
+            <div id="taxi-modal" class="modal modal-hidden">
+                <div class="modal-header">
+                    <span class="close-btn">&times;</span>
+                    <span class="modal-title">Taxi Service Website</span>
+                </div>
+                <div class="modal-content">
+                    <img src="pics/taxi.png" alt="taxi-modal-img" class="modal-img">
+                    <p class="modal-text">Website created for local taxi service for better online visibility</p>
+                </div>
+            </div>
+
+            <div id="bakery-modal" class="modal modal-hidden">
+                <div class="modal-header">
+                    <span class="close-btn">&times;</span>
+                    <span class="modal-title">Bakery Website</span>
+                </div>
+                <div class="modal-content">
+                    <img src="pics/bakery.png" alt="" class="modal-img">
+                    <p class="modal-text">Fun website created for local pastry shop in the area</p>
+                </div>
+            </div>
+
+            <button class="learn-more" id="learn-more" href="contact.html">Learn More</button>
+
+        </section>
+      <section class="main-section" id="Contact">
+            <h2 class="section-header" id="contact-header">Contact: </h2>
+            </h4>
+            <div class="contact-container">
+                <div class="contact-subsection" id="contact-info">
+                    <h5 class="subsection-header" id="contact-info-header">Info:</h5>
+                    <p class="subsection-text" id="phone-number">Phone: +1 (305)-498-5503</p>
+                    <p class="subsection-text" id="email"><a href="mailto:support@intrinsic.com" id="maillink"> Email: support@intrinsic.com</a></p>
+                </div>
+
+                <div class="contact-subsection" id="socials">
+                    <h5 class="subsection-header" id="social-header">Socials:</h5>
+                    <div class="social-links-container">
+                        <a href="facebook" class="social-link" target="_blank">
+                            <i class="fa-brands fa-facebook" id="Facebook"></i>
+                        </a>
+                        <a href="instagram" class="social-link" target="_blank">
+                            <i class="fa-brands fa-instagram" id="Instagram"></i>
+                        </a>
+                        <a href="x.com" class="social-link" target="_blank">
+                            <i class="fa-brands fa-x-twitter" id="Xcom"></i>
+                        </a>
+                        <a href="linkedin" class="social-link" target="_blank">
+                            <i class="fa-brands fa-linkedin" id="Linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-subsection" id="hours">
+                    <h5 class="subsection-header" id="hours-header">Hours:</h5>
+                    <p class="hours-info" id="weekdays">Monday - Friday: 8am - 4pm</p>
+                    <p class="hours-info" id="saturday">Saturday: 10am - 4pm</p>
+                    <p class="hours-info" id="sunday">Sunday: CLOSED</p>
+                </div>
+            </div>
+        </section>
+
+        <script src="portfolio_script1.js"></script>
+        <script src="portfolio_script2.js"></script>
+        <div id="modal-overlay" class="modal-overlay modal-hidden"></div>
+
+    </main>
+</body>
+</html>

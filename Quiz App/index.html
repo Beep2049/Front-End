@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz_style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="quiz-container" id="quiz-container">
+        <h1 class="question-header" id="question-header">Music Trivia Quiz</h1>
+        <div class="question-container" id="question-container">
+            <p class="question-text" id="question-text"></p>
+            <div id="answer-buttons">
+                 <!--Button Grid goes here-->
+            </div>
+        </div>
+    
+        <div class="control-containers" id="controls-container">
+            <button class="start-button" id="start-button">Start</button>
+            <div class="time-container" id="time-container">
+                <span class="time-text" id="time-text">Time Left: <span id="timer">0</span></span>
+            </div>
+        </div>
+        <div class="quiz-end-container" id="quiz-end-container" hidden>
+            <h2 class="end-header" id="end-header">Quiz Completed</h2>
+            <p class="end-score" id="end-score"></p>
+            <p class="end-grade" id="end-grade"></p>
+        </div>  
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
