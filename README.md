@@ -2,7 +2,7 @@
 
 ---
 
-Projects to teach me about front-end Web Design
+Projects to teach me about Front-End
 
 - [Personal Website](https://github.com/Beep2049/Front-End/tree/main/website_2)
 - [The Mosh At Sunset Website](https://github.com/Beep2049/Front-End/tree/main/the_mosh_at_sunset_website)
