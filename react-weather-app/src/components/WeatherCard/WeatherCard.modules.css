@@ -1,0 +1,41 @@
+.card-container{
+    margin: 5px;
+    text-align: center;
+}
+
+.city, .date, .description, .temperature{
+    margin: 15px;
+}
+
+.weather-details{
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.date{
+    font-size: larger;
+}
+
+.description{
+    font-size: large;
+    font-weight: bold;
+}
+
+.temperature{
+    font-size: large;
+    font-weight: bold;
+}
+
+.col-header{
+    font-weight: bold;
+    font-size: large;
+}
+
+.icon{
+    height: 60px;
+    width: 60px;
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,33 @@
+.weekly-forecast{
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.forecast-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.forecast-title{
+    font-size: x-large;
+    text-align: center;
+    margin: 10px;
+}
+
+.forecast-day{
+    text-align: center;
+    margin: 10px;
+}
+
+.temp-toggle{
+    height: 15px;
+    width: 15px;
+    border-radius: 8px;
+    background-color: white;
+    border: none;
+}
