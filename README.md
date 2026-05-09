@@ -2,10 +2,12 @@
 
 ---
 
-Projects used to teach myself Front-End Development. 
+Projects used to teach myself Front-End Development:
+
 
 #### React.js
 - [Weather App](https://github.com/Beep2049/Front-End/tree/main/react-weather-app)
+
 
 #### Web Stack(HTML, CSS, Javascript)
 - [Personal Website](https://github.com/Beep2049/Front-End/tree/main/website_2)
