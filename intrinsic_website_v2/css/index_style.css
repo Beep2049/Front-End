@@ -1,0 +1,362 @@
+/* Fade in effect */
+.fade-in-section{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.is-visible{
+  opacity: 1;
+  transform: none;
+}
+
+/* Fade in effect ends */
+
+/*Spacing*/
+:root{
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 5rem;
+}
+
+
+/* Site Graphic Section - Full width video background */
+#Site-Graphic {
+  color:white;
+  padding: 0 ; /* Remove padding for full video coverage */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header-content{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.main-header {
+  font-size: 3em;
+  text-align: center;
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  padding: 20px;
+}
+
+/* About Section - Full width green background */
+#About {
+  background-color: rgb(0, 128, 0);
+  color: white;
+  width: 100%;
+}
+
+/* Services Section - Full width white background */
+#Services {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  width: 100%;
+}
+
+/* Contact Section - Full width green background */
+#Contact {
+  background-color: green;
+  color: white;
+  width: 100%;
+}
+
+
+/* About Section Content */
+.about-content{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media(min-width: 768px){
+  .about-content{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.about-img{
+  flex: 0 0 auto;
+  max-width: 350px;
+  width: 1005;
+  height: auto;
+  border-radius: 8px;
+  object-fit:contain;
+}
+
+@media(min-width: 768px){
+  .about-img{
+    max-width: 400px;
+  }
+}
+
+
+#about-text{
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  padding: var(--spacing-sm);
+}
+
+@media(min-width: 768px){
+  #about-text{
+    font-size: 1.2rem;
+    text-align: left;
+  }
+}
+
+/* Services Section */
+.services-intro{
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+#service-header{
+  color: green;
+}
+
+#Services .section-text{
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 auto;
+  color: green;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: var(--spacing-md);
+  width: 100%;
+  margin-bottom: var(--spacing-xl);
+}
+
+@media(min-width: 640px){
+  .service-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(min-width: 1024px){
+  .service-grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+.service-tile {
+  position: relative;
+  height: auto;
+  aspect-ratio:  3 / 4;
+  min-height: 250px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media(min-width: 1024px){
+  .service-tile{
+    min-height: 350px;
+  }
+}
+
+
+.grid-text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.3s, transform 0.3s, color 0.3s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.966);
+}
+
+@media(min-width: 768px){
+  .service-grid{
+    font-size: 1.2rem;
+  }
+}
+
+@media(min-width: 1024px){
+  .grid-text{
+    font-size: 2.0rem;
+  }
+}
+
+.grid-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s;
+}
+
+.service-tile:hover {
+    transform: scale(1.05);
+}
+
+.service-tile:hover img {
+    opacity: 0.5;
+}
+
+.service-tile:hover .grid-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+
+#contact-info{
+    justify-self: start;
+    text-align: left;
+}
+
+#contact-info .subsection-header,
+#contact-info .subsection-text{
+    text-align: left;
+    width: 100%;
+}
+
+#hours{
+    justify-self: end;
+    text-align: right;
+}
+
+#hours .subsection-header,
+#hours .hours-info{
+    text-align: right;
+    width: 100%;
+}
+
+#maillink{
+    color: white;
+    text-decoration: none;
+}
+
+#maillink:hover{
+    text-decoration: underline;
+}
+
+
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  z-index: 999;
+  backdrop-filter: blur(3px); /* Optional: adds blur effect to background */
+}
+
+/* Modal Styles - Updated */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 2px solid #1c1c1c;
+  padding: 20px;
+  z-index: 1000;
+  width: 700px;
+  max-width: 90vw;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  font-family: 'Courier New', monospace;
+  color: black;
+  border-radius: 8px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: move; /* Indicates draggable area */
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+}
+
+.close-btn {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0 10px;
+  background: none;
+  border: none;
+}
+
+.close-btn:hover {
+  color: darkred;
+  transform: scale(1.1);
+}
+
+.modal-content {
+  padding: 10px;
+}
+
+.modal-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.modal-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.modal-hidden {
+  display: none;
+}
+
+/* Click animation for tiles */
+.service-tile.clicked {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}

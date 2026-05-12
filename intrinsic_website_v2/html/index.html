@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Intrinsic</title>
+    <link rel="stylesheet" href="/intrinsic_website_v2/css/global_style.css">
+    <link rel="stylesheet" href="/intrinsic_website_v2/css/index_style.css">
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="navbar-spacer"></div>
+    <main class="main-page">
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="index.html" class="navlink">Home</a>
+                <a href="index.html#About" class="navlink">About</a>
+                <a href="index.html#Services" class="navlink">Services</a>
+                <a href="/intrinsic_website_v2/html/pricing.html" class="navlink">Pricing</a>
+                <a href="/intrinsic_website_v2/php/contact.php" class="navlink">Contact</a>
+            </div>
+
+            <div class="nav-contact">
+                <p id="nav-phone" class="navlink">+1-305-498-5503</p>
+                <a href="mailto:support@intrinsicgd.com" class="navlink">support@intrinsicgd.com</a>
+            </div>
+        </nav>
+
+        
+        <section class="main-section" id="Site-Graphic">
+            <div class="header-content">
+                <header class="main-header" id="site-graphic-header">For Us,  Solutions Come Naturally</header>
+                <button class="help-button" id="help-button" href="contact.php">Get Started</button>
+            </div>
+            <video class="header-video" id="header-video" autoplay muted loop>
+                <source src="/intrinsic_website_v2/pics/b-roll.mp4">
+                Your Browser Does Not Support The Video Tag
+            </video>
+    
+        </section>
+
+        <section class="main-section" id="About">
+            <h2 class="section-header">Who We Are</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="section-text" id="about-text">
+                        Intrinsic, based in Grenada, is small team of experts that are passionately driven
+                        to make your business thrive in the digital world and beyond.
+                        From website launches to search engine optimizations, for businesses big and small 
+                        we're dedicated to cultivating your digital footprint to match your businesses unique needs. 
+                    </p>
+                </div>
+                <img src="/intrinsic_website_v2/pics/development.webp" alt="-dev-life cycle" class="about-img"></img>
+            </div>
+        </section>
+
+        <section class="main-section" id="Services">
+            <h2 class="section-header" id="service-header">What We Do</h2>
+
+            <div class="services-intro">
+                <p class="section-text">We offer a multitude of services to help your business standout in the digital landscape. These include: </p>
+            </div>
+
+            <div class="service-grid" id="service-grid">
+                <div class="service-tile" id="website-design" data-modal="website-modal">
+                    <img src="/intrinsic_website_v2/pics/web-design.webp" alt="web-design" class="grid-img" id="web-design-img">
+                    <p class="grid-text" id="">Website Development</p>
+                </div>
+                <div class="service-tile" id="backend-support" data-modal="backend-modal">
+                    <img src="/intrinsic_website_v2/pics/backend-dev.webp" alt="backend-dev" class="grid-img" id="backend-support-img">
+                    <p class="grid-text" id="">Backend Support</p>
+                </div>
+                <div class="service-tile" id="seo" data-modal="search-modal">
+                    <img src="/intrinsic_website_v2/pics/SEO.webp" alt="SEO" class="grid-img" id="seo-img">
+                    <p class="grid-text" id="">Search Engine Optimization</p>
+                </div>
+                <div class="service-tile" id="product-launch" data-modal="product-modal">
+                    <img src="/intrinsic_website_v2/pics/product-launch.webp" alt="product-launch" class="grid-img" id="product-launch-img">
+                    <p class="grid-text" id="">Product Launch & Support</p>
+                </div>
+                
+            </div>
+            <div class="service-learn-more" id="service-learn-more">
+                    <button class="service-button" id="service-button" href="pricing.html">Learn More</button>
+            </div>
+
+            <div id="website-modal" class="modal modal-hidden">
+                <div class="modal-header">
+                    <span class="close-btn">&times;</span>
+                    <span class="modal-title">Website Development</span>
+                </div>
+                <div class="modal-content">
+                    <img src="/intrinsic_website_v2/pics/web-design.webp" alt="" class="modal-img">
+                    <p class="modal-text">We handle all aspects of website creation, from inception 
+                        to concept design to finished product,
+                        and we tailor the final product to your 
+                        business needs and personal taste.</p>
+                </div>
+            </div>
+            
+
+            <div id="backend-modal" class="modal modal-hidden">
+                <div class="modal-header">
+                  <span class="close-btn">&times;</span>
+                  <span class="modal-title">Backend Support</span>
+                </div>
+                <div class="modal-content">
+                    <img src="/intrinsic_website_v2/pics/backend-dev.webp" alt="" class="modal-img">
+                    <p class="modal-text">Proffesional long-term maintenaince of your websites and 
+                        other products to manage any issues regarding connectivity, website glitches,
+                        and other post-launch problems so you can focus on what really matters.</p>
+                </div>
+            </div>
+            
+
+            <div id="search-modal" class="modal modal-hidden">
+                <div class="modal-header">
+                  <span class="close-btn">&times;</span>
+                  <span class="modal-title">Search Engine Optimization</span>
+                </div>
+                <div class="modal-content">
+                  <img src="/intrinsic_website_v2/pics/SEO.webp" alt="" class="modal-img">
+                  <p class="modal-text">Optimizing your website via keyword searches, digital strategization, 
+                    and other services that increase your visibility on the internet.</p>
+                </div>
+            </div>
+            
+
+            <div id="product-modal" class="modal modal-hidden">
+                <div class="modal-header">
+                  <span class="close-btn">&times;</span>
+                  <span class="modal-title">Product Consultation & Support</span>
+                </div>
+                <div class="modal-content">
+                    <img src="/intrinsic_website_v2/pics/product-launch.webp" alt="" class="modal-img">
+                    <p class="modal-text">We provide expert consultation to 
+                        provide guidance to your product launch as well as 
+                        assistance regarding the finer details of it all, such as marketing, 
+                        maintenance, and post-launch assistance.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="main-section" id="Contact">
+            <h2 class="section-header" id="contact-header">Ready To Start?</h2>
+            <div class="contact-container">
+                <div class="contact-subsection" id="contact-info">
+                    <h5 class="subsection-header" id="contact-info-header">Info:</h5>
+                    <p class="subsection-text" id="phone-number">Phone: +1 (305)-498-5503</p>
+                    <p class="subsection-text" id="email"><a href="mailto:support@intrinsicgd.com" id="maillink"> Email: support@intrinsicgd.com</a></p>
+                </div>
+
+                <div class="contact-subsection" id="socials">
+                    <h5 class="subsection-header" id="social-header">Socials:</h5>
+                    <div class="social-links-container">
+                        <a href="facebook" class="social-link" target="_blank">
+                            <i class="fa-brands fa-facebook" id="Facebook"></i>
+                        </a>
+                        <a href="instagram" class="social-link" target="_blank">
+                            <i class="fa-brands fa-instagram" id="Instagram"></i>
+                        </a>
+                        <a href="x.com" class="social-link" target="_blank">
+                            <i class="fa-brands fa-x-twitter" id="Xcom"></i>
+                        </a>
+                        <a href="linkedin" class="social-link" target="_blank">
+                            <i class="fa-brands fa-linkedin" id="Linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-subsection" id="hours">
+                    <h5 class="subsection-header" id="hours-header">Hours:</h5>
+                    <p class="hours-info" id="weekdays">Monday - Friday: 8am - 8pm</p>
+                    <p class="hours-info" id="saturday">Saturday: 10am - 4pm</p>
+                    <p class="hours-info" id="sunday">Sunday: CLOSED</p>
+                </div>
+            </div>
+        </section>
+
+        <script src="/intrinsic_website_v2/js/index_script1.js"></script>
+        <script src="/intrinsic_website_v2/js/button_script.js"></script>
+        <div id="modal-overlay" class="modal-overlay modal-hidden"></div>
+    </main>
+    
+    <footer class="copyright">Copyright @ 2025. All Rights Reserved</footer>
+</body>
+</html>
